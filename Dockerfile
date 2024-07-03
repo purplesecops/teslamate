@@ -47,7 +47,7 @@ RUN SKIP_LOCALE_DOWNLOAD=true mix release --path /opt/built
 
 ########################################################################
 
-FROM debian:bookworm-slim AS app
+FROM debian:12.6-slim AS app
 
 ENV LANG=C.UTF-8 \
     SRTM_CACHE=/opt/app/.srtm_cache \
